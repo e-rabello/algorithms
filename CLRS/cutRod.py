@@ -13,8 +13,24 @@ def cutRod(p, n):
 
     return q
                    
-    
 
+def cutRodDP(p, n):
+# Dynamic programming solution for the Rod Cutting Problem
+# f(n) = O(n^2)
+
+    r = []
+
+    r.append(0)
+    
+    for i in range(1, n + 1):
+        q = 0
+
+        for j in range(0, i):
+            q = max(q, p[j] + r[i - j - 1])
+            
+        r.append(q)
+
+    return r[n]
 # list of prices
 l = [1,5,8,9,10,17,17,20,24,30]
 
