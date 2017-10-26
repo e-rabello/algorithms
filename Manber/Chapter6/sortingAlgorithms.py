@@ -66,6 +66,7 @@ def bubbleRec(A, n):
 
 def mergeSort(A, p, q):
 # MergeSort designed by strong induction(Divide-and-Conquer)
+# To be finished
     if p < q:
 
         # Divide
@@ -82,7 +83,7 @@ def mergeSort(A, p, q):
 
 def merge(A, p, q):
 # Merge
-    
+# To be finished
     size = q - p
     
 
@@ -90,10 +91,12 @@ def merge(A, p, q):
 
 #def heapSort(A):
 # HeapSort designed by strong induction(Divide-and-Conquer)
+# To be implemented
 
     
 #def quickSort(A):
 # QuickSort designed by strong induction(Divide-and-Conquer)
+# To be implemented
     
 
 
