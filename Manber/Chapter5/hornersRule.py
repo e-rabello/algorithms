@@ -1,5 +1,6 @@
 def hornersRule(l, x):
-
+# Horner's Rule
+    
     size = len(l)
     P = l[size - 1]
     
