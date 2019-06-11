@@ -7,7 +7,6 @@ def mergeSort(A, p, q):
 
         # Divide
         mid = (p + q) // 2
-
         # Conquer
         # By inductive hypothesis, we know how to sort the array A[p:mid]
         mergeSort(A, p, mid)
