@@ -7,7 +7,6 @@ def mergeSort(A, p, q):
 
         # Divide
         mid = (p + q) // 2
-
         # Conquer
         # By inductive hypothesis, we know how to sort the array A[p:mid]
         mergeSort(A, p, mid)
@@ -65,8 +64,8 @@ def findSum(A, x):
     # traverse the array using two "pointers" i and j
     # i starting from index 0(1st index) and j starting from index len(A) - 1
     # Because A is sorted, we can say that i always points to the minimum element of A and j points to the maximum element of A
+    # that makes the sum A[i] + A[j] = x possible
     while i < j:
-
         if A[i] + A[j] == x:
             return i, j
 
